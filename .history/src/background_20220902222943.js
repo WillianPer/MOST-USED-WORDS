@@ -33,14 +33,12 @@ async function createWindow() {
     // Load the index.html when not in development
     win.loadURL('app://./index.html')
   }
-  win.webContents.on('did-finish-load', () => {
-    // eslint-disable-next-line no-unused-vars
-    const { title, version } = require("../package-lock.json")
-    win.setTitle(`${ title } :: ${ version }`)
-  })
 }
 
-
+// eslint-disable-next-line no-undef
+win.webContents.on('did-finish-load', () => {
+  console.log('Terminou!')
+})
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {

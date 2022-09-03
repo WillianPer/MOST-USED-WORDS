@@ -33,11 +33,9 @@ async function createWindow() {
     // Load the index.html when not in development
     win.loadURL('app://./index.html')
   }
-  win.webContents.on('did-finish-load', () => {
-    // eslint-disable-next-line no-unused-vars
-    const { title, version } = require("../package-lock.json")
-    win.setTitle(`${ title } :: ${ version }`)
-  })
+  // win.webContents.on('did-finish-load', () => {
+  //   console.log('Terminou!')
+  // })
 }
 
 
@@ -72,6 +70,8 @@ app.on('ready', async () => {
   }
   createWindow()
 })
+
+
 
 // Exit cleanly on request from parent process in development mode.
 if (isDevelopment) {

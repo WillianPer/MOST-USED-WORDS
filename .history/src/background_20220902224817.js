@@ -36,7 +36,7 @@ async function createWindow() {
   win.webContents.on('did-finish-load', () => {
     // eslint-disable-next-line no-unused-vars
     const { title, version } = require("../package-lock.json")
-    win.setTitle(`${ title } :: ${ version }`)
+    console.log('Terminou!')
   })
 }
 

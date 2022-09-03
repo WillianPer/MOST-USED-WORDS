@@ -33,14 +33,7 @@ async function createWindow() {
     // Load the index.html when not in development
     win.loadURL('app://./index.html')
   }
-  win.webContents.on('did-finish-load', () => {
-    // eslint-disable-next-line no-unused-vars
-    const { title, version } = require("../package-lock.json")
-    win.setTitle(`${ title } :: ${ version }`)
-  })
 }
-
-
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
@@ -50,7 +43,6 @@ app.on('window-all-closed', () => {
     app.quit()
   }
 })
-
 
 app.on('activate', () => {
   // On macOS it's common to re-create a window in the app when the

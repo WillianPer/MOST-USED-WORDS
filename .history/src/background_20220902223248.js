@@ -28,16 +28,14 @@ async function createWindow() {
     // Load the url of the dev server if in development mode
     await win.loadURL(process.env.WEBPACK_DEV_SERVER_URL)
     // if (!process.env.IS_TEST) win.webContents.openDevTools()
+    win.webContents.on('did-finish-load', () => {
+      console.log('Terminou!')
+    })
   } else {
     createProtocol('app')
     // Load the index.html when not in development
     win.loadURL('app://./index.html')
   }
-  win.webContents.on('did-finish-load', () => {
-    // eslint-disable-next-line no-unused-vars
-    const { title, version } = require("../package-lock.json")
-    win.setTitle(`${ title } :: ${ version }`)
-  })
 }
 
 
@@ -72,6 +70,8 @@ app.on('ready', async () => {
   }
   createWindow()
 })
+
+
 
 // Exit cleanly on request from parent process in development mode.
 if (isDevelopment) {
