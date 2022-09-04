@@ -5,17 +5,12 @@
     </v-app-bar>
 
     <v-main>
-      <HomeVue/>
+      
     </v-main>
-    <!-- <v-content>
-      <HomeVue/>
-    </v-content> -->
   </v-app>
 </template>
 
 <script>
-
-import HomeVue from './components/HomeVue'
 
 
 export default {
@@ -23,8 +18,7 @@ export default {
 
   components: {
     
-    HomeVue
-},
+  },
 
   data: () => ({
     //

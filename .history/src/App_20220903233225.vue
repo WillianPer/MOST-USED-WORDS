@@ -7,22 +7,20 @@
     <v-main>
       <HomeVue/>
     </v-main>
-    <!-- <v-content>
-      <HomeVue/>
-    </v-content> -->
   </v-app>
 </template>
 
 <script>
 
-import HomeVue from './components/HomeVue'
-
+import HomeVue from './components/HomeVue.vue'
+import HomeVue from './components/HomeVue.vue'
 
 export default {
   name: "App",
 
   components: {
-    
+    // eslint-disable-next-line vue/no-unused-components
+    HomeVue,
     HomeVue
 },
 

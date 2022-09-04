@@ -15,14 +15,14 @@
 
 <script>
 
-import HomeVue from './components/HomeVue'
+import HomeVue from './components/HomeVue.vue'
 
 
 export default {
   name: "App",
 
   components: {
-    
+    // eslint-disable-next-line vue/no-unused-components
     HomeVue
 },
 

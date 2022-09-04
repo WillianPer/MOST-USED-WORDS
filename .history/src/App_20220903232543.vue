@@ -5,26 +5,23 @@
     </v-app-bar>
 
     <v-main>
-      <HomeVue/>
+      
     </v-main>
-    <!-- <v-content>
-      <HomeVue/>
-    </v-content> -->
   </v-app>
 </template>
 
 <script>
 
-import HomeVue from './components/HomeVue'
-
+// eslint-disable-next-line no-unused-vars
+import Home from './components/Home.vue'
 
 export default {
   name: "App",
 
   components: {
-    
-    HomeVue
-},
+    // eslint-disable-next-line vue/no-unused-components
+    Home
+  },
 
   data: () => ({
     //
