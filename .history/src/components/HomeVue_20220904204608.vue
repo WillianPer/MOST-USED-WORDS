@@ -2,7 +2,7 @@
     <v-container fluid>
         <div class="pills">
             <PillVue v-for="word in groupedWords" :key="word.name"
-                :name="word.name" :amount="word.amount" />
+                name="word.name" amount="word.amount" />
         </div>
     </v-container>
 </template>
