@@ -29,21 +29,4 @@ export default {
     .pill .name {
       margin-left: 15px;
     }
-
-    .pill .amount {
-      margin: 10px;
-      padding: 5px;
-      height: 35px;
-      width: 35px;
-      border-radius: 18px;
-
-      background-color: #fff;
-      color: crimson;
-
-      font-size: 14px;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
 </style>
