@@ -11,7 +11,7 @@
                 chips 
                 v-model="files"
                 @click:append-outer="processSubtitles" />
-                <!-- append-icon="mdi-send" -->
+                <!-- append-outer-icon="mdi-send" -->
         </v-form>
 
         <div class="pills">
@@ -29,6 +29,21 @@ export default {
         return {
             files: [],
             groupedWords: [
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
                 { name: "i", amount: 1234 },
                 { name: "you", amount: 900 },
                 { name: "he", amount: 853 },

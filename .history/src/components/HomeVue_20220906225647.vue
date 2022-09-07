@@ -5,13 +5,9 @@
             <v-file-input 
                 label="Selecione as Legendas"
                 prepend-icon="mdi-message-text"
-                append-outer-icon="mdi-send" 
-                outlined
                 multiple 
                 chips 
-                v-model="files"
-                @click:append-outer="processSubtitles" />
-                <!-- append-icon="mdi-send" -->
+                v-model="files" />
         </v-form>
 
         <div class="pills">
@@ -29,6 +25,21 @@ export default {
         return {
             files: [],
             groupedWords: [
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
                 { name: "i", amount: 1234 },
                 { name: "you", amount: 900 },
                 { name: "he", amount: 853 },

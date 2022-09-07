@@ -2,16 +2,7 @@
     <v-container fluid>
 
         <v-form>
-            <v-file-input 
-                label="Selecione as Legendas"
-                prepend-icon="mdi-message-text"
-                append-outer-icon="mdi-send" 
-                outlined
-                multiple 
-                chips 
-                v-model="files"
-                @click:append-outer="processSubtitles" />
-                <!-- append-icon="mdi-send" -->
+            <v-file-input multiple chips v-model="files" />
         </v-form>
 
         <div class="pills">
@@ -22,6 +13,7 @@
 </template>
 
 <script>
+import { METHODS } from 'http';
 import PillVue from './PillVue.vue';
 export default {
     components: { PillVue },
@@ -29,6 +21,21 @@ export default {
         return {
             files: [],
             groupedWords: [
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
+                { name: "i", amount: 1234 },
+                { name: "you", amount: 900 },
+                { name: "he", amount: 853 },
                 { name: "i", amount: 1234 },
                 { name: "you", amount: 900 },
                 { name: "he", amount: 853 },
