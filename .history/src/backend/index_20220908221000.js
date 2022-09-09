@@ -14,6 +14,8 @@ ipcMain.on('process-subtitle', (event, paths) => {
                 { name: "our", amount: 133 },
                 { name: "house", amount: 23 },
             ])
+            
+
         })
 
 })
